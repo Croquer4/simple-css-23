@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(247, 233, 203);
+    margin: 0;
+    /* uses flex to maintain vertical and horizontal centering  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#master{
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+    /* cannpt get the below drop shawdow to work  */
+    filter: drop-shadow(5px 5px 10px rgb(182, 179, 179));
+   
+}
+#days-container{
+     /* uses flex to maintain vertical and horizontal centering  */
+    display:flex;
+}
+.day{
+    width:100px;
+    height:100px;
+}
+.button:hover{
+    background-color: rgb(11, 188, 211);
+}
+.button:active{background-color: rgb(106, 156, 156);
+
+}
+h4{
+font-size: 24px;
+/* all text can be turned into caps  */
+text-transform: uppercase;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:rgb(43, 95, 33);
+text-align: center;
+margin-top: 10px;
+margin-bottom: 7px;
+
+}
+#city-text{
+
+font-size: 40px;
+/* absolute keeps the text on top of the image  */
+position: absolute;
+left: 10px;
+bottom: 10px;
+margin: 0;
+color: rgba(255, 255, 255, 0.548)
+}
+#hero-container{
+    /* object fit helps the image not stretch  */
+    object-fit: cover;
+    width: 700px;
+    height: 500px;
+
+}
+#hero-image{
+    /* main image  */
+    width: 700px;
+    height: 500px;
+
+}
+.weather-icon{
+    /* sizes of weather icons  */
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
